@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfume Store - Contact Us</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="formval.js"></script>
+</head>
+
+<body>
+  <header class="perfume-header">
+    <div class="perfume-container">
+      <div class="perfume-logo">
+        <h1>Hamsa's Perfume</h1>
+      </div>
+      <nav class="perfume-navbar">
+        <ul class="perfume-nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact Us</a>
+          </li>
+          <li>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="perfume-contact">
+    <div class="perfume-contact-container">
+      <h2>Get in Touch</h2>
+      <p>
+        We would love to hear from you! Fill out the form below and we'll get
+        back to you as soon as possible.
+      </p>
+
+      <form id="contactForm" class="perfume-contact-form" >
+        <div class="form-group-inline">
+          <input type="text" id="email" name="email" placeholder="Email"  />
+          <input type="text" id="phone" name="phone" placeholder="Phone"  />
+        </div>
+        <input type="text" id="name" name="name" placeholder="Name"  />
+        <textarea id="message" name="message" placeholder="Message" rows="5" ></textarea>
+        <button type="submit">Submit Button</button>
+      </form>
+
+      <div
+        id="formMessage"
+        style="text-align:center; margin-top:10px; font-weight:bold;"
+      ></div>
+    </div>
+
+    <!-- Contact Details Section -->
+    <div class="contact-details">
+      <div class="detail-box">
+        <i class="fas fa-phone-alt"></i>
+        <h3>(+876) 765 665</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="detail-box">
+        <i class="fas fa-envelope"></i>
+        <h3>mail@influenca.id</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="detail-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>London Eye, London</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="perfume-footer">
+    <div class="perfume-container">
+      <p>
+        Copyright &copy; 2024
+        Hs perfume All Rights Reserved ||
+        Developed by Hamsa
+      </p>
+      <div class="social-media-icons">
+        <a
+          href="https://www.instagram.com/_hamsuli_6/?locale=kk-KZ"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

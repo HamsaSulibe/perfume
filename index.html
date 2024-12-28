@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<title>Hamsa's Perfume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+   
+    <header class="perfume-header">
+        <div class="perfume-container">
+            <div class="perfume-logo">
+                <h1>Hamsa's Perfume</h1>
+            </div>
+            <nav class="perfume-navbar">
+                <ul class="perfume-nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            
+         
+        </div>
+    </header>
+    <section class="perfume-hero">
+        <div class="perfume-hero-content">
+            <div class="perfume-hero-overlay">
+                <h2>Unleash the Essence of Luxury</h2>
+                <p>Immerse yourself in an exquisite collection of premium perfumes tailored to captivate your senses.</p>
+                <a href="shop.html" class="perfume-btn">Explore Our Collection</a>
+            </div>
+            <div class="perfume-hero-photo-container">
+                <img src="gold1.jpeg" alt="Golden Perfume Bottle" class="perfume-photo-extra">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="perfume-featured-products">
+        <h2>Featured products</h2>
+        <div class="perfume-carousel" id="perfume-featured-carousel">
+            
+        </div>
+    </section>
+
+   
+            <section class="client-testimonials">
+                <h2>What our clients think of us!</h2>
+                <p1>Every company is known with the reviews they get. We have gathered some of the recent reviews.</p1>
+                <div class="testimonials-container">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">
+                            <span>&ldquo;</span> Doing Business with “THE HOUSE OF FRAGRANCE” was one of the best decisions I have ever made.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="1.jpeg" alt="Sirgie Ivanov">
+                            <span>Sirgie Ivanov</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">
+                            <span>&ldquo;</span> Oh my goodness these people are really professional. They know how to get the job done efficiently.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="2.jpeg" alt="Alisher Osmanov">
+                            <span>Alisher Osmanov</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">
+                            <span>&ldquo;</span> We were looking for a trusted supplier and we got what we were looking for. Amazing people with good faith.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="3.jpeg" alt="Jean Markowitz">
+                            <span>Jean Markowitz</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">
+                            <span>&ldquo;</span> I have heard a lot about them and I really wanted to do business with them. I can say now that I am satisfied.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="1.jpeg" alt="Dorothy Cobb">
+                            <span>Dorothy Cobb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </section>
+
+
+
+<footer class="perfume-footer">
+    <div class="perfume-container">
+        <p>Copyright &copy; 2024 Hs perfume All Rights Reserved || Developed by Hamsa/p>
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com/_hamsuli_6/?locale=kk-KZ" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    
+    
+    <script>
+        const products = [
+            { id: 1, name: "chanel", price: 55.99, image: "chanel1.jpeg" },
+            { id: 2, name: "coco chanel", price: 30.99, image: "chanel3.jpeg" },
+            { id: 3, name: "chanel",  price: 55.99, image: "chanel2.jpeg" },
+        ];
+    
+       
+        function loadFeaturedProducts() {
+            const carousel = document.getElementById("perfume-featured-carousel");
+            if (!carousel) return;
+    
+            products.forEach(product => {
+                const productCard = document.createElement("div");
+                productCard.classList.add("perfume-item");
+                productCard.setAttribute('data-name', product.name); 
+    
+                productCard.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>Price: $${product.price.toFixed(2)}</p>
+                `;
+    
+                carousel.appendChild(productCard);
+            });
+        }
+    
+        window.addEventListener('DOMContentLoaded', () => {
+            loadFeaturedProducts();
+        });
+    </script>
+    
+   

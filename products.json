@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Kayali",
+      "price": 30.50,
+      "image": "04.jpeg",
+      "description": "A mesmerizing fragrance that intertwines delicate floral notes with a hint of warm vanilla, perfect for both day and night."
+    },
+    {
+      "id": 2,
+      "name": "Lsv",
+      "price": 60.99,
+      "image": "03.jpeg",
+      "description": "An enchanting blend of citrus and soft musk, delivering a bold statement of elegance and confidence."
+    },
+    {
+      "id": 3,
+      "name": "Mis Dior",
+      "price": 40.99,
+      "image": "07.jpeg",
+      "description": "A timeless bouquet of roses, jasmine, and fresh bergamot, evoking a refined sense of romance."
+    },
+    {
+      "id": 4,
+      "name": "Lsv",
+      "price": 100.99,
+      "image": "las.jpeg",
+      "description": "A refined composition that marries crisp green undertones with a velvet-smooth finish, exuding modern sophistication."
+    },
+    {
+      "id": 5,
+      "name": "Aurien Gold",
+      "price": 25.00,
+      "image": "05.jpeg",
+      "description": "A shimmering scent capturing the essence of precious amber and sweet vanilla, reminiscent of golden sunsets."
+    },
+    {
+      "id": 6,
+      "name": "Chanel",
+      "price": 74.99,
+      "image": "09.jpeg",
+      "description": "An iconic aroma merging crisp aldehydes with delicate floral accords, resulting in an alluring presence."
+    },
+    {
+      "id": 7,
+      "name": "Chanel",
+      "price": 49.99,
+      "image": "chanel1.jpeg",
+      "description": "A modern twist on a classic favorite, blending sweet citrus with earthy patchouli for a memorable impression."
+    },
+    {
+      "id": 8,
+      "name": "Chanel",
+      "price": 30.99,
+      "image": "chanelred.jpg",
+      "description": "A timeless signature embodying pure sophistication, with floral top notes and a smooth, sensual trail."
+    },
+    {
+      "id": 9,
+      "name": "Chanel",
+      "price": 69.99,
+      "image": "chanel2.jpeg",
+      "description": "An elegant fusion of rose, iris, and subtle spice, leaving a luxurious aura wherever you go."
+    },
+    {
+      "id": 10,
+      "name": "Kayali",
+      "price": 49.99,
+      "image": "04.jpeg",
+      "description": "Tender floral notes balanced with a comforting creamy backdrop, ideal for those seeking warmth and sophistication."
+    },
+    {
+      "id": 11,
+      "name": "Chanel",
+      "price": 50.99,
+      "image": "08.jpeg",
+      "description": "Vibrant top notes meet delicate musks in this fragrance, offering a graceful balance of freshness and refinement."
+    },
+    {
+      "id": 12,
+      "name": "Chanel",
+      "price": 74.99,
+      "image": "06.jpeg",
+      "description": "A radiant bouquet of white blossoms with a subtle trail of sandalwood and vanilla, capturing classic elegance."
+    }
+  ]
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+  <title>Shop - Hamsa's Perfume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="perfume-header">
+    <div class="perfume-container">
+      <div class="perfume-logo">
+        <h1>Hamsa's Perfume</h1>
+      </div>
+      <nav class="perfume-navbar">
+        <ul class="perfume-nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="shop.html" class="active"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="perfume-search">
+    <div class="perfume-container">
+      <input
+        type="text"
+        id="search-bar-shop"
+        placeholder="Search perfumes..."
+        onkeyup="searchPerfumes()"
+      />
+    </div>
+  </section>
+
+  <section class="perfume-shop">
+    <div class="perfume-product-grid" id="perfume-product-list">
+    </div>
+  </section>
+
+  <div id="productModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modal-product-image" src="" alt="Perfume Image" />
+      <h2 id="modal-product-name"></h2>
+      <p id="modal-product-description"></p>
+      <p id="modal-product-price"></p>
+    </div>
+  </div>
+
+  <footer class="perfume-footer">
+    <div class="perfume-container">
+      <p>
+        Copyright &copy; 2024 
+        Hs perfume All Rights Reserved ||
+        Developed by Hamsa
+      </p>
+      <div class="social-media-icons">
+        <a
+          href="https://www.instagram.com/_hamsuli_6/?locale=kk-KZ"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function searchPerfumes() {
+      const query = document.getElementById('search-bar-shop').value.toLowerCase();
+      const products = document.querySelectorAll('.perfume-product-card');
+
+      products.forEach(product => {
+        const name = product.getAttribute('data-name').toLowerCase();
+        if (name.includes(query)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
